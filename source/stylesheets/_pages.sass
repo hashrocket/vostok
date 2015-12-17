@@ -1,0 +1,26 @@
+#home
+  position: relative
+  text-align: center
+  padding: 10vw 5vw 14vw 5vw
+  margin: 20vw auto
+  .logo
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: center no-repeat svg-url(hashrocket)
+    background-size: contain
+    animation: 4.5s .5s pulse ease-in-out
+    animation-fill-mode: forwards
+  h1, p, .logo
+    opacity: 0
+    animation: 1.5s flicker ease-in-out
+    animation-fill-mode: forwards
+    text-shadow: 0 0 1vw $yellow
+  h1
+    animation-duration: 3s
+    animation-delay: 1.3s
+  p
+    animation-duration: 2s
+    animation-delay: 2.2s

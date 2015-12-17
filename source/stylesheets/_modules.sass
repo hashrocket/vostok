@@ -1,0 +1,242 @@
+#policy
+  h1
+    +icon-header(anchor)
+
+#social
+  text-align: center
+  margin-bottom: 3vw
+  a
+    position: relative
+    display: inline-block
+    letter-spacing: .1em
+    font-size: .85em
+    padding: 1vw 2vw 1vw 5vw
+    color: #fff
+    text-transform: uppercase
+    font-weight: 700
+    top: 0
+    transition: top .2s
+    &:hover
+      top: -.5rem
+    &.social_twitter
+      background: $blue no-repeat 2vw 50% svg-url(twitter)
+      background-size: 2vw auto
+      +mobile
+        padding-left: 3rem
+        background-size: 1.5rem auto
+
+#title
+  header
+    border-top: 1px solid $ruby
+    border-right: 1px solid $mint
+    border-bottom: 1px solid $yellow
+    border-left: 1px solid $orange
+    padding: 4vw
+    text-align: center
+    h2.subhead
+      &:after
+        content: ""
+        display: block
+        width: 5rem
+        border-bottom: 1px solid #ccc
+        margin: 2rem auto
+    h1
+      +header
+      font-size: 9vw
+      line-height: 1
+      padding: 2vw 0
+    p.subhead
+      span
+        display: inline-block
+        padding: 1.5vw 2vw
+        + span
+          border-left: 1px solid #ccc
+      +tablet
+        &:before
+          content: ""
+          display: block
+          width: 5rem
+          border-bottom: 1px solid #ccc
+          margin: 2rem auto
+        span
+          display: block
+          padding: 0
+          + span
+            border: none
+
+#join-us
+  +rope(calc(4.5vw + 2rem))
+  &:before
+    z-index: 1
+  h1
+    +icon_header(anchor)
+    position: relative
+    z-index: 4
+    background: #fff
+    border-left: 1px solid #aaa
+    border-right: 1px solid #aaa
+  p
+    font-size: 1.2em
+    +mobile
+      font-size: 1em
+
+#features
+  +rope(2vw)
+  ul
+    display: flex
+    justify-content: space-between
+    li
+      flex: 0 0 31%
+      padding-bottom: 14vw
+      background: transparent top center no-repeat svg-url(banner-gray)
+      background-size: contain
+      color: #fff
+      text-align: center
+      +header
+      font-size: 3vw
+      small
+        display: block
+        font-weight: bold
+        text-transform: uppercase
+        margin-top: 3.5vw
+        font-family: $body_font
+        +responsive(font-size, 1.6rem, 1.4rem)
+        line-height: 1
+      + li
+        background-image: svg-url(banner-yellow)
+        color: $orange
+        + li
+          color: $gray
+          background-image: svg-url(banner-blue)
+      img
+        max-height: 8vw
+        margin-top: 5vw
+      +mobile
+        background-color: $gray
+        background-size: auto 140%
+        font-size: 5vw
+        padding-bottom: 3vw
+        img
+          max-height: 16vw
+          margin-top: 7vw
+        small
+          margin-top: 6vw
+        + li
+          background-color: $yellow
+          + li
+            background-color: $sky_blue
+
+#look-back
+  h1
+    +header
+    font-size: 5vw
+    margin-bottom: 2vw
+    +mobile
+      text-align: center
+      font-size: 7vw
+  h2.subhead
+    margin: 2rem 0
+  iframe
+    width: 100%
+    height: 38.5vw
+    +mobile
+      height: 46vw
+  ul
+    +clearfix
+    li
+      float: left
+      width: 48%
+      font-weight: bold
+      line-height: 1.2
+      margin: 0 2% 1rem 0
+      a
+        display: block
+        transition: color .2s
+        &:hover
+          color: $ruby
+      &:nth-of-type(2n+1)
+        clear: left
+      small
+        display: block
+        opacity: .5
+        text-transform: uppercase
+        font-size: .8em
+      +mobile
+        width: auto
+        float: none
+
+#sponsor,
+#cfp
+  h1
+    +icon_header(whale)
+  section
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .half
+      flex: 0 0 48%
+      margin-bottom: 3vw
+    +tablet
+      display: block
+    a
+      +gold-button
+  footer.subhead
+    color: transparentize($gray, .5)
+    text-align: center
+    hr
+      margin: 0 0 3vw
+    a
+      color: inherit
+      +mobile
+        display: block
+
+#cfp
+  h1
+    +icon_header(bottle)
+
+#venue
+  h1
+    +header
+    font-size: 4.2vw
+    text-align: center
+    margin-bottom: .3em
+  section
+    +responsive(display, flex, block)
+    display: flex
+    align-items: center
+    .venue_wide
+      flex: 1
+    .venue_narrow
+      flex: 0 0 35%
+      +responsive(padding, 3rem, 2rem 0 0 0)
+      padding: 3rem
+    img
+      max-width: 100%
+      height: auto
+  a.book_rooms
+    +gold-button
+
+#tickets
+  background: url("/images/gull_banner.svg") repeat-x center
+  text-align: center
+  padding: 4vw 0
+  background-size: auto 100%
+  +mobile
+    padding: 2.5vw 0
+  a
+    position: relative
+    top: -1.1vw
+    display: inline-block
+    border: 1px solid lighten($blue, 20%)
+    +responsive(padding, 2rem 4rem, 1.5rem 2.5rem)
+    padding: 2rem 4rem
+    text-align: center
+    font-family: $subheader
+    letter-spacing: .2rem
+    text-transform: uppercase
+    color: #fff
+    transition: border-color .2s
+    &:hover
+      border-color: #fff
+    +mobile
+      border: 0

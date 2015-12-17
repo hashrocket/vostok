@@ -1,0 +1,10 @@
+@keyframes body-fade
+  0%
+    background: #000
+  100%
+    background: $dark-red
+
+@keyframes flicker
+  @for $i from 1 through 100
+    #{$i}%
+      opacity: ($i + 80 * (random() - .5)) / 100
