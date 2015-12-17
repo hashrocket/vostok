@@ -14,6 +14,7 @@ git clone git@github.com:hashrocket/vostok.git ~/.middleman/vostok
 ... initialize a new project with it ...
 
 ```
+gem install middleman
 middleman init your_project --template=vostok
 cd your_project
 ```
